@@ -34,6 +34,7 @@ class ViewController: UIViewController, AVPlayerItemMetadataOutputPushDelegate {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
+        dataModel.reloadData()
         setupObservers()
         setupMetadataOutput()
         play()
