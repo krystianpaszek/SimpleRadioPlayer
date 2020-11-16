@@ -11,7 +11,7 @@ import AVFoundation
 private let kPlayButtonImage = UIImage(systemName: "play.fill")
 private let kPauseButtonImage = UIImage(systemName: "pause.fill")
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, AVPlayerItemMetadataOutputPushDelegate {
 
     // MARK: - Properties
     private let player: AVPlayer = {
@@ -27,7 +27,15 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
+        setupMetadataOutput()
         play()
+    }
+
+    // MARK: - Setup
+    private func setupMetadataOutput() {
+        let metadataOutput = AVPlayerItemMetadataOutput()
+        metadataOutput.setDelegate(self, queue: .main)
+        player.currentItem?.add(metadataOutput)
     }
 
     // MARK: - Actions
@@ -43,6 +51,12 @@ class ViewController: UIViewController {
     private func pause() {
         playPauseButton.setImage(kPlayButtonImage, for: .normal)
         player.pause()
+    }
+}
+
+// MARK: - AVPlayerItemMetadataOutputPushDelegate
+extension ViewController {
+    func metadataOutput(_ output: AVPlayerItemMetadataOutput, didOutputTimedMetadataGroups groups: [AVTimedMetadataGroup], from track: AVPlayerItemTrack?) {
     }
 }
 
