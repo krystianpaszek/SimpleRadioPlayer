@@ -36,8 +36,8 @@ class ViewController: UIViewController, AVPlayerItemMetadataOutputPushDelegate {
     @IBOutlet weak var albumCoverImageView: UIImageView!
 
     // MARK: - Lifecycle
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewDidLoad() {
+        super.viewDidLoad()
 
         setupAlbumCoverImageView()
         setupObservers()
