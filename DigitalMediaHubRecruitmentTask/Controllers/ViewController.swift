@@ -7,6 +7,7 @@
 
 import UIKit
 import AVFoundation
+import SDWebImage
 
 private let kPlayButtonImage = UIImage(systemName: "play.fill")
 private let kPauseButtonImage = UIImage(systemName: "pause.fill")
@@ -31,13 +32,15 @@ class ViewController: UIViewController, AVPlayerItemMetadataOutputPushDelegate {
     @IBOutlet weak var playPauseButton: UIButton!
     @IBOutlet weak var songNameLabel: UILabel!
     @IBOutlet weak var artistNameLabel: UILabel!
+    @IBOutlet weak var albumCoverImageView: UIImageView!
 
     // MARK: - Lifecycle
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-        dataModel.reloadData()
+        setupAlbumCoverImageView()
         setupObservers()
+        dataModel.reloadData()
         setupMetadataOutput()
         play()
     }
@@ -67,8 +70,14 @@ class ViewController: UIViewController, AVPlayerItemMetadataOutputPushDelegate {
         albumCoverObservation = observe(\.dataModel.albumCoverURL, options: [.new], changeHandler: { [weak self] (object, change) in
             guard let newValue = change.newValue else { return }
             guard let albumCoverURL = newValue else { return }
-            print(albumCoverURL)
+
+            self?.albumCoverImageView.sd_setImage(with: albumCoverURL)
         })
+    }
+
+    private func setupAlbumCoverImageView() {
+        albumCoverImageView.sd_imageIndicator = SDWebImageActivityIndicator.gray
+        albumCoverImageView.sd_imageTransition = .fade
     }
 
     // MARK: - Actions
