@@ -76,6 +76,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		97273B222562CDE100D6645A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				979BC966256292450034A27F /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		97273B232562CDE600D6645A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		97273B242562CDEB00D6645A /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		97273B252562CDEF00D6645A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		979BC956256292450034A27F = {
 			isa = PBXGroup;
 			children = (
@@ -99,9 +128,12 @@
 		979BC961256292450034A27F /* DigitalMediaHubRecruitmentTask */ = {
 			isa = PBXGroup;
 			children = (
+				97273B222562CDE100D6645A /* Controllers */,
+				97273B242562CDEB00D6645A /* Managers */,
+				97273B232562CDE600D6645A /* Models */,
+				97273B252562CDEF00D6645A /* Protocols */,
 				979BC962256292450034A27F /* AppDelegate.swift */,
 				979BC964256292450034A27F /* SceneDelegate.swift */,
-				979BC966256292450034A27F /* ViewController.swift */,
 				979BC968256292450034A27F /* Main.storyboard */,
 				979BC96B256292460034A27F /* Assets.xcassets */,
 				979BC96D256292460034A27F /* LaunchScreen.storyboard */,
