@@ -12,7 +12,7 @@ struct Track: Decodable {
     let creationTime: Date
     let title: String
     let artist: String
-    let cover: URL
+    let cover: URL?
 
     enum CodingKeys: String, CodingKey {
         case id, creationTime, title, artist
