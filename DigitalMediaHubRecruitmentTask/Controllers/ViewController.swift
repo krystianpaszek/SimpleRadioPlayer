@@ -39,6 +39,7 @@ class ViewController: UIViewController, AVPlayerItemMetadataOutputPushDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setupRemoteCommandCenter()
         setupAlbumCoverImageView()
         setupObservers()
         dataModel.reloadData()
@@ -47,6 +48,23 @@ class ViewController: UIViewController, AVPlayerItemMetadataOutputPushDelegate {
     }
 
     // MARK: - Setup
+    private func setupRemoteCommandCenter() {
+        let commandCenter = MPRemoteCommandCenter.shared()
+
+        commandCenter.pauseCommand.isEnabled = true
+        commandCenter.playCommand.isEnabled = true
+
+        commandCenter.playCommand.addTarget(handler: { [weak self] _ in
+            self?.play()
+            return .success
+        })
+
+        commandCenter.pauseCommand.addTarget(handler: { [weak self] _ in
+            self?.pause()
+            return .success
+        })
+    }
+
     private func setupMetadataOutput() {
         let metadataOutput = AVPlayerItemMetadataOutput()
         metadataOutput.setDelegate(self, queue: .main)
