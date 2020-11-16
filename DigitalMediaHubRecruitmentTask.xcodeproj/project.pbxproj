@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9791C6972562D295006E5477 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9791C6962562D295006E5477 /* PromiseKit */; };
 		979BC963256292450034A27F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979BC962256292450034A27F /* AppDelegate.swift */; };
 		979BC965256292450034A27F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979BC964256292450034A27F /* SceneDelegate.swift */; };
 		979BC967256292450034A27F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979BC966256292450034A27F /* ViewController.swift */; };
@@ -19,6 +18,8 @@
 		97CFBD092562CE9A00EDE47E /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CFBD082562CE9A00EDE47E /* Station.swift */; };
 		97CFBD0E2562CECA00EDE47E /* PlayHistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CFBD0D2562CECA00EDE47E /* PlayHistoryItem.swift */; };
 		97CFBD132562CED300EDE47E /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CFBD122562CED300EDE47E /* Track.swift */; };
+		97E98D682562D88700F48000 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 97E98D672562D88700F48000 /* PromiseKit */; };
+		97E98D6E2562D89700F48000 /* PMKFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 97E98D6D2562D89700F48000 /* PMKFoundation */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9791C6972562D295006E5477 /* PromiseKit in Frameworks */,
+				97E98D6E2562D89700F48000 /* PMKFoundation in Frameworks */,
+				97E98D682562D88700F48000 /* PromiseKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +190,8 @@
 			);
 			name = DigitalMediaHubRecruitmentTask;
 			packageProductDependencies = (
-				9791C6962562D295006E5477 /* PromiseKit */,
+				97E98D672562D88700F48000 /* PromiseKit */,
+				97E98D6D2562D89700F48000 /* PMKFoundation */,
 			);
 			productName = DigitalMediaHubRecruitmentTask;
 			productReference = 979BC95F256292450034A27F /* DigitalMediaHubRecruitmentTask.app */;
@@ -262,7 +265,8 @@
 			);
 			mainGroup = 979BC956256292450034A27F;
 			packageReferences = (
-				9791C6952562D295006E5477 /* XCRemoteSwiftPackageReference "PromiseKit" */,
+				97E98D662562D88700F48000 /* XCRemoteSwiftPackageReference "PromiseKit" */,
+				97E98D6C2562D89700F48000 /* XCRemoteSwiftPackageReference "Foundation" */,
 			);
 			productRefGroup = 979BC960256292450034A27F /* Products */;
 			projectDirPath = "";
@@ -647,7 +651,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		9791C6952562D295006E5477 /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
+		97E98D662562D88700F48000 /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mxcl/PromiseKit";
 			requirement = {
@@ -655,13 +659,26 @@
 				minimumVersion = 6.13.3;
 			};
 		};
+		97E98D6C2562D89700F48000 /* XCRemoteSwiftPackageReference "Foundation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/PromiseKit/Foundation";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.3.4;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		9791C6962562D295006E5477 /* PromiseKit */ = {
+		97E98D672562D88700F48000 /* PromiseKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9791C6952562D295006E5477 /* XCRemoteSwiftPackageReference "PromiseKit" */;
+			package = 97E98D662562D88700F48000 /* XCRemoteSwiftPackageReference "PromiseKit" */;
 			productName = PromiseKit;
+		};
+		97E98D6D2562D89700F48000 /* PMKFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 97E98D6C2562D89700F48000 /* XCRemoteSwiftPackageReference "Foundation" */;
+			productName = PMKFoundation;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
