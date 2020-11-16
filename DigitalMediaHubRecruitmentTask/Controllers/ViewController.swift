@@ -86,7 +86,7 @@ class ViewController: UIViewController, AVPlayerItemMetadataOutputPushDelegate {
 // MARK: - AVPlayerItemMetadataOutputPushDelegate
 extension ViewController {
     func metadataOutput(_ output: AVPlayerItemMetadataOutput, didOutputTimedMetadataGroups groups: [AVTimedMetadataGroup], from track: AVPlayerItemTrack?) {
-        
+        dataModel.reloadData()
     }
 }
 
