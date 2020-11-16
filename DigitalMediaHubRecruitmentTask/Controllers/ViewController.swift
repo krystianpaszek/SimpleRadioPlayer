@@ -13,12 +13,19 @@ private let kPauseButtonImage = UIImage(systemName: "pause.fill")
 
 class ViewController: UIViewController, AVPlayerItemMetadataOutputPushDelegate {
 
+    // MARK: - Dependencies
+    @objc let dataModel = ViewControllerDataModel(networkService: NetworkService())
+
     // MARK: - Properties
     private let player: AVPlayer = {
         let streamURL = URL(string: "https://stream.antenne.com/antenne-nds-80er/mp3-128/iPhoneApp")!
         let player = AVPlayer(url: streamURL)
         return player
     }()
+
+    private var songNameObservation: NSKeyValueObservation?
+    private var artistObservation: NSKeyValueObservation?
+    private var albumCoverObservation: NSKeyValueObservation?
 
     // MARK: - Outlets
     @IBOutlet weak var playPauseButton: UIButton!
@@ -27,6 +34,7 @@ class ViewController: UIViewController, AVPlayerItemMetadataOutputPushDelegate {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
+        setupObservers()
         setupMetadataOutput()
         play()
     }
@@ -36,6 +44,26 @@ class ViewController: UIViewController, AVPlayerItemMetadataOutputPushDelegate {
         let metadataOutput = AVPlayerItemMetadataOutput()
         metadataOutput.setDelegate(self, queue: .main)
         player.currentItem?.add(metadataOutput)
+    }
+
+    private func setupObservers() {
+        songNameObservation = observe(\.dataModel.songName, options: [.new], changeHandler: { (object, change) in
+            guard let newValue = change.newValue else { return }
+            guard let name = newValue else { return }
+            print(name)
+        })
+
+        artistObservation = observe(\.dataModel.artist, options: [.new], changeHandler: { (object, change) in
+            guard let newValue = change.newValue else { return }
+            guard let artist = newValue else { return }
+            print(artist)
+        })
+
+        albumCoverObservation = observe(\.dataModel.albumCoverURL, options: [.new], changeHandler: { (object, change) in
+            guard let newValue = change.newValue else { return }
+            guard let albumCoverURL = newValue else { return }
+            print(albumCoverURL)
+        })
     }
 
     // MARK: - Actions
