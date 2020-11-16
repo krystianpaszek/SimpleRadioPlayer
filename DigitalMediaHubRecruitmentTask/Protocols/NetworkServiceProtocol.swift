@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import PromiseKit
 
 protocol NetworkServiceProtocol {
     func fetchFullProgramInfo() -> Promise<[Station]>
