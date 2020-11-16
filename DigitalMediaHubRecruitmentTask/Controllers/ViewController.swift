@@ -7,6 +7,7 @@
 
 import UIKit
 import AVFoundation
+import MediaPlayer
 import SDWebImage
 
 private let kPlayButtonImage = UIImage(systemName: "play.fill")
@@ -58,6 +59,7 @@ class ViewController: UIViewController, AVPlayerItemMetadataOutputPushDelegate {
             guard let name = newValue else { return }
 
             self?.songNameLabel.text = name
+            updateNowPlaying(key: MPMediaItemPropertyTitle, value: name)
         })
 
         artistObservation = observe(\.dataModel.artist, options: [.new], changeHandler: { [weak self] (object, change) in
@@ -65,13 +67,18 @@ class ViewController: UIViewController, AVPlayerItemMetadataOutputPushDelegate {
             guard let artist = newValue else { return }
 
             self?.artistNameLabel.text = artist
+            updateNowPlaying(key: MPMediaItemPropertyArtist, value: artist)
         })
 
         albumCoverObservation = observe(\.dataModel.albumCoverURL, options: [.new], changeHandler: { [weak self] (object, change) in
             guard let newValue = change.newValue else { return }
             guard let albumCoverURL = newValue else { return }
 
-            self?.albumCoverImageView.sd_setImage(with: albumCoverURL)
+            self?.albumCoverImageView.sd_setImage(with: albumCoverURL) { image, _, _, _ in
+                guard let image = image else { return }
+                let artwork = MPMediaItemArtwork(boundsSize: image.size, requestHandler: { _ in return image } )
+                updateNowPlaying(key: MPMediaItemPropertyArtwork, value: artwork)
+            }
         })
     }
 
@@ -110,3 +117,11 @@ extension ViewController {
     }
 }
 
+private func updateNowPlaying(key: String, value: Any) {
+    let nowPlayingInfoCenter = MPNowPlayingInfoCenter.default()
+    var nowPlayingInfo = nowPlayingInfoCenter.nowPlayingInfo ?? [:]
+
+    nowPlayingInfo[key] = value
+
+    nowPlayingInfoCenter.nowPlayingInfo = nowPlayingInfo
+}
