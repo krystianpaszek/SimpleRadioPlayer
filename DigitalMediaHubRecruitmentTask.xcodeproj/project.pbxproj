@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9791C6972562D295006E5477 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9791C6962562D295006E5477 /* PromiseKit */; };
 		979BC963256292450034A27F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979BC962256292450034A27F /* AppDelegate.swift */; };
 		979BC965256292450034A27F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979BC964256292450034A27F /* SceneDelegate.swift */; };
 		979BC967256292450034A27F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979BC966256292450034A27F /* ViewController.swift */; };
@@ -62,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9791C6972562D295006E5477 /* PromiseKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +187,9 @@
 			dependencies = (
 			);
 			name = DigitalMediaHubRecruitmentTask;
+			packageProductDependencies = (
+				9791C6962562D295006E5477 /* PromiseKit */,
+			);
 			productName = DigitalMediaHubRecruitmentTask;
 			productReference = 979BC95F256292450034A27F /* DigitalMediaHubRecruitmentTask.app */;
 			productType = "com.apple.product-type.application";
@@ -256,6 +261,9 @@
 				Base,
 			);
 			mainGroup = 979BC956256292450034A27F;
+			packageReferences = (
+				9791C6952562D295006E5477 /* XCRemoteSwiftPackageReference "PromiseKit" */,
+			);
 			productRefGroup = 979BC960256292450034A27F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -637,6 +645,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9791C6952562D295006E5477 /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mxcl/PromiseKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.13.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9791C6962562D295006E5477 /* PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9791C6952562D295006E5477 /* XCRemoteSwiftPackageReference "PromiseKit" */;
+			productName = PromiseKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 979BC957256292450034A27F /* Project object */;
 }
