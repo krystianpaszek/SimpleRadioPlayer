@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SimpleRadioPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7q-aR-JaQ">
+                                <rect key="frame" x="191" y="495.5" width="32" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="play.fill" catalog="system" symbolScale="default"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font">
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
+                                    </preferredSymbolConfiguration>
+                                </state>
+                                <connections>
+                                    <action selector="playPauseButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FmL-3w-0bG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="song_name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jN-TQ-1zN">
+                                <rect key="frame" x="16" y="554.5" width="382" height="41"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="artist_name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RPB-cG-ee5">
+                                <rect key="frame" x="16" y="603.5" width="382" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kgy-AL-mZx">
+                                <rect key="frame" x="64" y="177.5" width="286" height="286"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Kgy-AL-mZx" secondAttribute="height" multiplier="1:1" id="xdv-pG-yVz"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RPB-cG-ee5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2Pl-QF-zbs"/>
+                            <constraint firstItem="O7q-aR-JaQ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="64" id="5dL-tw-F2g"/>
+                            <constraint firstItem="RPB-cG-ee5" firstAttribute="leading" secondItem="0jN-TQ-1zN" secondAttribute="leading" id="8Zh-V5-ngJ"/>
+                            <constraint firstItem="0jN-TQ-1zN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="DjS-TX-Eoc"/>
+                            <constraint firstItem="RPB-cG-ee5" firstAttribute="top" secondItem="0jN-TQ-1zN" secondAttribute="bottom" constant="8" symbolic="YES" id="GaB-OO-539"/>
+                            <constraint firstItem="Kgy-AL-mZx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="GxS-KF-g0d"/>
+                            <constraint firstItem="O7q-aR-JaQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="JcC-dJ-Dhz"/>
+                            <constraint firstItem="0jN-TQ-1zN" firstAttribute="top" secondItem="O7q-aR-JaQ" secondAttribute="bottom" constant="16" id="JhW-u2-qvW"/>
+                            <constraint firstItem="Kgy-AL-mZx" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="K32-yY-ONW"/>
+                            <constraint firstItem="O7q-aR-JaQ" firstAttribute="top" secondItem="Kgy-AL-mZx" secondAttribute="bottom" constant="32" id="bwU-U2-1tG"/>
+                            <constraint firstItem="0jN-TQ-1zN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hMV-fs-YZ1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="albumCoverImageView" destination="Kgy-AL-mZx" id="Aq2-8v-S7N"/>
+                        <outlet property="artistNameLabel" destination="RPB-cG-ee5" id="1eP-Ug-peC"/>
+                        <outlet property="playPauseButton" destination="O7q-aR-JaQ" id="z69-ho-gho"/>
+                        <outlet property="songNameLabel" destination="0jN-TQ-1zN" id="ZQv-Qn-Mkg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="play.fill" catalog="system" width="116" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
