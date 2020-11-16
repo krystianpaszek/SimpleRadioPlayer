@@ -19,17 +19,11 @@ class ViewController: UIViewController {
         let player = AVPlayer(url: streamURL)
         return player
     }()
-    private var playing: Bool = false
 
     // MARK: - Outlets
     @IBOutlet weak var playPauseButton: UIButton!
 
     // MARK: - Lifecycle
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
-
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
@@ -38,19 +32,17 @@ class ViewController: UIViewController {
 
     // MARK: - Actions
     @IBAction func playPauseButtonTouched(_ sender: UIButton) {
-        playing ? pause() : play()
+        player.timeControlStatus == .playing ? pause() : play()
     }
 
     private func play() {
         playPauseButton.setImage(kPauseButtonImage, for: .normal)
         player.play()
-        playing = true
     }
 
     private func pause() {
         playPauseButton.setImage(kPlayButtonImage, for: .normal)
         player.pause()
-        playing = false
     }
 }
 
