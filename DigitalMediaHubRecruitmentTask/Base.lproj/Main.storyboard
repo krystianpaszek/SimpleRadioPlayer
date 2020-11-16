@@ -30,14 +30,14 @@
                                     <action selector="playPauseButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FmL-3w-0bG"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="song_name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jN-TQ-1zN">
-                                <rect key="frame" x="135.5" y="554.5" width="143" height="34"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="song_name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jN-TQ-1zN">
+                                <rect key="frame" x="16" y="554.5" width="382" height="41"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="artist_name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RPB-cG-ee5">
-                                <rect key="frame" x="161.5" y="596.5" width="91" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="artist_name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RPB-cG-ee5">
+                                <rect key="frame" x="16" y="603.5" width="382" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -54,6 +54,8 @@
                         <constraints>
                             <constraint firstItem="RPB-cG-ee5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2Pl-QF-zbs"/>
                             <constraint firstItem="O7q-aR-JaQ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="64" id="5dL-tw-F2g"/>
+                            <constraint firstItem="RPB-cG-ee5" firstAttribute="leading" secondItem="0jN-TQ-1zN" secondAttribute="leading" id="8Zh-V5-ngJ"/>
+                            <constraint firstItem="0jN-TQ-1zN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="DjS-TX-Eoc"/>
                             <constraint firstItem="RPB-cG-ee5" firstAttribute="top" secondItem="0jN-TQ-1zN" secondAttribute="bottom" constant="8" symbolic="YES" id="GaB-OO-539"/>
                             <constraint firstItem="Kgy-AL-mZx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="GxS-KF-g0d"/>
                             <constraint firstItem="O7q-aR-JaQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="JcC-dJ-Dhz"/>
