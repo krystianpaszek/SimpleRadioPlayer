@@ -6,14 +6,51 @@
 //
 
 import UIKit
+import AVFoundation
+
+private let kPlayButtonImage = UIImage(systemName: "play.fill")
+private let kPauseButtonImage = UIImage(systemName: "pause.fill")
 
 class ViewController: UIViewController {
 
+    // MARK: - Properties
+    private let player: AVPlayer = {
+        let streamURL = URL(string: "https://stream.antenne.com/antenne-nds-80er/mp3-128/iPhoneApp")!
+        let player = AVPlayer(url: streamURL)
+        return player
+    }()
+    private var playing: Bool = false
+
+    // MARK: - Outlets
+    @IBOutlet weak var playPauseButton: UIButton!
+
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
 
+        play()
+    }
+
+    // MARK: - Actions
+    @IBAction func playPauseButtonTouched(_ sender: UIButton) {
+        playing ? pause() : play()
+    }
+
+    private func play() {
+        playPauseButton.setImage(kPauseButtonImage, for: .normal)
+        player.play()
+        playing = true
+    }
+
+    private func pause() {
+        playPauseButton.setImage(kPlayButtonImage, for: .normal)
+        player.pause()
+        playing = false
+    }
 }
 
