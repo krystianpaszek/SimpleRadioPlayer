@@ -99,6 +99,13 @@ class ViewController: UIViewController, AVPlayerItemMetadataOutputPushDelegate {
 // MARK: - AVPlayerItemMetadataOutputPushDelegate
 extension ViewController {
     func metadataOutput(_ output: AVPlayerItemMetadataOutput, didOutputTimedMetadataGroups groups: [AVTimedMetadataGroup], from track: AVPlayerItemTrack?) {
+        if let item = groups.first?.items.first, let value = item.value {
+            debugPrint("\n///----------")
+            debugPrint("NEW SONG METADATA:")
+            debugPrint(value)
+            debugPrint("///----------\n")
+        }
+
         dataModel.reloadData()
     }
 }
