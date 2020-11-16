@@ -1,14 +1,14 @@
 //
-//  DigitalMediaHubRecruitmentTaskTests.swift
-//  DigitalMediaHubRecruitmentTaskTests
+//  SimpleRadioPlayerTests.swift
+//  SimpleRadioPlayerTests
 //
 //  Created by Krystian Paszek on 16/11/2020.
 //
 
 import XCTest
-@testable import DigitalMediaHubRecruitmentTask
+@testable import SimpleRadioPlayer
 
-class DigitalMediaHubRecruitmentTaskTests: XCTestCase {
+class SimpleRadioPlayerTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

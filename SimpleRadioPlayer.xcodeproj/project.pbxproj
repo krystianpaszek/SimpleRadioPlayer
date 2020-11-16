@@ -13,8 +13,8 @@
 		979BC96A256292450034A27F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 979BC968256292450034A27F /* Main.storyboard */; };
 		979BC96C256292460034A27F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 979BC96B256292460034A27F /* Assets.xcassets */; };
 		979BC96F256292460034A27F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 979BC96D256292460034A27F /* LaunchScreen.storyboard */; };
-		979BC97A256292460034A27F /* DigitalMediaHubRecruitmentTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979BC979256292460034A27F /* DigitalMediaHubRecruitmentTaskTests.swift */; };
-		979BC985256292460034A27F /* DigitalMediaHubRecruitmentTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979BC984256292460034A27F /* DigitalMediaHubRecruitmentTaskUITests.swift */; };
+		979BC97A256292460034A27F /* SimpleRadioPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979BC979256292460034A27F /* SimpleRadioPlayerTests.swift */; };
+		979BC985256292460034A27F /* SimpleRadioPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979BC984256292460034A27F /* SimpleRadioPlayerUITests.swift */; };
 		97B91AF62562E31500203FD4 /* ViewControllerDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B91AF52562E31500203FD4 /* ViewControllerDataModel.swift */; };
 		97B91AFC2562E7CC00203FD4 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 97B91AFB2562E7CC00203FD4 /* SDWebImage */; };
 		97CFBD092562CE9A00EDE47E /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CFBD082562CE9A00EDE47E /* Station.swift */; };
@@ -32,19 +32,19 @@
 			containerPortal = 979BC957256292450034A27F /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 979BC95E256292450034A27F;
-			remoteInfo = DigitalMediaHubRecruitmentTask;
+			remoteInfo = SimpleRadioPlayer;
 		};
 		979BC981256292460034A27F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 979BC957256292450034A27F /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 979BC95E256292450034A27F;
-			remoteInfo = DigitalMediaHubRecruitmentTask;
+			remoteInfo = SimpleRadioPlayer;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		979BC95F256292450034A27F /* DigitalMediaHubRecruitmentTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigitalMediaHubRecruitmentTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		979BC95F256292450034A27F /* SimpleRadioPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleRadioPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		979BC962256292450034A27F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		979BC964256292450034A27F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		979BC966256292450034A27F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,11 +52,11 @@
 		979BC96B256292460034A27F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		979BC96E256292460034A27F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		979BC970256292460034A27F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		979BC975256292460034A27F /* DigitalMediaHubRecruitmentTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigitalMediaHubRecruitmentTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		979BC979256292460034A27F /* DigitalMediaHubRecruitmentTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalMediaHubRecruitmentTaskTests.swift; sourceTree = "<group>"; };
+		979BC975256292460034A27F /* SimpleRadioPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleRadioPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		979BC979256292460034A27F /* SimpleRadioPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRadioPlayerTests.swift; sourceTree = "<group>"; };
 		979BC97B256292460034A27F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		979BC980256292460034A27F /* DigitalMediaHubRecruitmentTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigitalMediaHubRecruitmentTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		979BC984256292460034A27F /* DigitalMediaHubRecruitmentTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalMediaHubRecruitmentTaskUITests.swift; sourceTree = "<group>"; };
+		979BC980256292460034A27F /* SimpleRadioPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleRadioPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		979BC984256292460034A27F /* SimpleRadioPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRadioPlayerUITests.swift; sourceTree = "<group>"; };
 		979BC986256292460034A27F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97B91AF52562E31500203FD4 /* ViewControllerDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDataModel.swift; sourceTree = "<group>"; };
 		97CFBD082562CE9A00EDE47E /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
@@ -132,9 +132,9 @@
 		979BC956256292450034A27F = {
 			isa = PBXGroup;
 			children = (
-				979BC961256292450034A27F /* DigitalMediaHubRecruitmentTask */,
-				979BC978256292460034A27F /* DigitalMediaHubRecruitmentTaskTests */,
-				979BC983256292460034A27F /* DigitalMediaHubRecruitmentTaskUITests */,
+				979BC961256292450034A27F /* SimpleRadioPlayer */,
+				979BC978256292460034A27F /* SimpleRadioPlayerTests */,
+				979BC983256292460034A27F /* SimpleRadioPlayerUITests */,
 				979BC960256292450034A27F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -142,14 +142,14 @@
 		979BC960256292450034A27F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				979BC95F256292450034A27F /* DigitalMediaHubRecruitmentTask.app */,
-				979BC975256292460034A27F /* DigitalMediaHubRecruitmentTaskTests.xctest */,
-				979BC980256292460034A27F /* DigitalMediaHubRecruitmentTaskUITests.xctest */,
+				979BC95F256292450034A27F /* SimpleRadioPlayer.app */,
+				979BC975256292460034A27F /* SimpleRadioPlayerTests.xctest */,
+				979BC980256292460034A27F /* SimpleRadioPlayerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		979BC961256292450034A27F /* DigitalMediaHubRecruitmentTask */ = {
+		979BC961256292450034A27F /* SimpleRadioPlayer */ = {
 			isa = PBXGroup;
 			children = (
 				97273B222562CDE100D6645A /* Controllers */,
@@ -163,33 +163,33 @@
 				979BC96D256292460034A27F /* LaunchScreen.storyboard */,
 				979BC970256292460034A27F /* Info.plist */,
 			);
-			path = DigitalMediaHubRecruitmentTask;
+			path = SimpleRadioPlayer;
 			sourceTree = "<group>";
 		};
-		979BC978256292460034A27F /* DigitalMediaHubRecruitmentTaskTests */ = {
+		979BC978256292460034A27F /* SimpleRadioPlayerTests */ = {
 			isa = PBXGroup;
 			children = (
-				979BC979256292460034A27F /* DigitalMediaHubRecruitmentTaskTests.swift */,
+				979BC979256292460034A27F /* SimpleRadioPlayerTests.swift */,
 				979BC97B256292460034A27F /* Info.plist */,
 			);
-			path = DigitalMediaHubRecruitmentTaskTests;
+			path = SimpleRadioPlayerTests;
 			sourceTree = "<group>";
 		};
-		979BC983256292460034A27F /* DigitalMediaHubRecruitmentTaskUITests */ = {
+		979BC983256292460034A27F /* SimpleRadioPlayerUITests */ = {
 			isa = PBXGroup;
 			children = (
-				979BC984256292460034A27F /* DigitalMediaHubRecruitmentTaskUITests.swift */,
+				979BC984256292460034A27F /* SimpleRadioPlayerUITests.swift */,
 				979BC986256292460034A27F /* Info.plist */,
 			);
-			path = DigitalMediaHubRecruitmentTaskUITests;
+			path = SimpleRadioPlayerUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		979BC95E256292450034A27F /* DigitalMediaHubRecruitmentTask */ = {
+		979BC95E256292450034A27F /* SimpleRadioPlayer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 979BC989256292460034A27F /* Build configuration list for PBXNativeTarget "DigitalMediaHubRecruitmentTask" */;
+			buildConfigurationList = 979BC989256292460034A27F /* Build configuration list for PBXNativeTarget "SimpleRadioPlayer" */;
 			buildPhases = (
 				979BC95B256292450034A27F /* Sources */,
 				979BC95C256292450034A27F /* Frameworks */,
@@ -199,19 +199,19 @@
 			);
 			dependencies = (
 			);
-			name = DigitalMediaHubRecruitmentTask;
+			name = SimpleRadioPlayer;
 			packageProductDependencies = (
 				97E98D672562D88700F48000 /* PromiseKit */,
 				97E98D6D2562D89700F48000 /* PMKFoundation */,
 				97B91AFB2562E7CC00203FD4 /* SDWebImage */,
 			);
-			productName = DigitalMediaHubRecruitmentTask;
-			productReference = 979BC95F256292450034A27F /* DigitalMediaHubRecruitmentTask.app */;
+			productName = SimpleRadioPlayer;
+			productReference = 979BC95F256292450034A27F /* SimpleRadioPlayer.app */;
 			productType = "com.apple.product-type.application";
 		};
-		979BC974256292460034A27F /* DigitalMediaHubRecruitmentTaskTests */ = {
+		979BC974256292460034A27F /* SimpleRadioPlayerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 979BC98C256292460034A27F /* Build configuration list for PBXNativeTarget "DigitalMediaHubRecruitmentTaskTests" */;
+			buildConfigurationList = 979BC98C256292460034A27F /* Build configuration list for PBXNativeTarget "SimpleRadioPlayerTests" */;
 			buildPhases = (
 				979BC971256292460034A27F /* Sources */,
 				979BC972256292460034A27F /* Frameworks */,
@@ -222,14 +222,14 @@
 			dependencies = (
 				979BC977256292460034A27F /* PBXTargetDependency */,
 			);
-			name = DigitalMediaHubRecruitmentTaskTests;
-			productName = DigitalMediaHubRecruitmentTaskTests;
-			productReference = 979BC975256292460034A27F /* DigitalMediaHubRecruitmentTaskTests.xctest */;
+			name = SimpleRadioPlayerTests;
+			productName = SimpleRadioPlayerTests;
+			productReference = 979BC975256292460034A27F /* SimpleRadioPlayerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		979BC97F256292460034A27F /* DigitalMediaHubRecruitmentTaskUITests */ = {
+		979BC97F256292460034A27F /* SimpleRadioPlayerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 979BC98F256292460034A27F /* Build configuration list for PBXNativeTarget "DigitalMediaHubRecruitmentTaskUITests" */;
+			buildConfigurationList = 979BC98F256292460034A27F /* Build configuration list for PBXNativeTarget "SimpleRadioPlayerUITests" */;
 			buildPhases = (
 				979BC97C256292460034A27F /* Sources */,
 				979BC97D256292460034A27F /* Frameworks */,
@@ -240,9 +240,9 @@
 			dependencies = (
 				979BC982256292460034A27F /* PBXTargetDependency */,
 			);
-			name = DigitalMediaHubRecruitmentTaskUITests;
-			productName = DigitalMediaHubRecruitmentTaskUITests;
-			productReference = 979BC980256292460034A27F /* DigitalMediaHubRecruitmentTaskUITests.xctest */;
+			name = SimpleRadioPlayerUITests;
+			productName = SimpleRadioPlayerUITests;
+			productReference = 979BC980256292460034A27F /* SimpleRadioPlayerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -267,7 +267,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 979BC95A256292450034A27F /* Build configuration list for PBXProject "DigitalMediaHubRecruitmentTask" */;
+			buildConfigurationList = 979BC95A256292450034A27F /* Build configuration list for PBXProject "SimpleRadioPlayer" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -285,9 +285,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				979BC95E256292450034A27F /* DigitalMediaHubRecruitmentTask */,
-				979BC974256292460034A27F /* DigitalMediaHubRecruitmentTaskTests */,
-				979BC97F256292460034A27F /* DigitalMediaHubRecruitmentTaskUITests */,
+				979BC95E256292450034A27F /* SimpleRadioPlayer */,
+				979BC974256292460034A27F /* SimpleRadioPlayerTests */,
+				979BC97F256292460034A27F /* SimpleRadioPlayerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -340,7 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				979BC97A256292460034A27F /* DigitalMediaHubRecruitmentTaskTests.swift in Sources */,
+				979BC97A256292460034A27F /* SimpleRadioPlayerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,7 +348,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				979BC985256292460034A27F /* DigitalMediaHubRecruitmentTaskUITests.swift in Sources */,
+				979BC985256292460034A27F /* SimpleRadioPlayerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,12 +357,12 @@
 /* Begin PBXTargetDependency section */
 		979BC977256292460034A27F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 979BC95E256292450034A27F /* DigitalMediaHubRecruitmentTask */;
+			target = 979BC95E256292450034A27F /* SimpleRadioPlayer */;
 			targetProxy = 979BC976256292460034A27F /* PBXContainerItemProxy */;
 		};
 		979BC982256292460034A27F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 979BC95E256292450034A27F /* DigitalMediaHubRecruitmentTask */;
+			target = 979BC95E256292450034A27F /* SimpleRadioPlayer */;
 			targetProxy = 979BC981256292460034A27F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -510,12 +510,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QCNU46SB92;
-				INFOPLIST_FILE = DigitalMediaHubRecruitmentTask/Info.plist;
+				INFOPLIST_FILE = SimpleRadioPlayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.paszek.DigitalMediaHubRecruitmentTask;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paszek.SimpleRadioPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -529,12 +529,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QCNU46SB92;
-				INFOPLIST_FILE = DigitalMediaHubRecruitmentTask/Info.plist;
+				INFOPLIST_FILE = SimpleRadioPlayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.paszek.DigitalMediaHubRecruitmentTask;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paszek.SimpleRadioPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -548,18 +548,18 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QCNU46SB92;
-				INFOPLIST_FILE = DigitalMediaHubRecruitmentTaskTests/Info.plist;
+				INFOPLIST_FILE = SimpleRadioPlayerTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.paszek.DigitalMediaHubRecruitmentTaskTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paszek.SimpleRadioPlayerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DigitalMediaHubRecruitmentTask.app/DigitalMediaHubRecruitmentTask";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleRadioPlayer.app/SimpleRadioPlayer";
 			};
 			name = Debug;
 		};
@@ -570,18 +570,18 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QCNU46SB92;
-				INFOPLIST_FILE = DigitalMediaHubRecruitmentTaskTests/Info.plist;
+				INFOPLIST_FILE = SimpleRadioPlayerTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.paszek.DigitalMediaHubRecruitmentTaskTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paszek.SimpleRadioPlayerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DigitalMediaHubRecruitmentTask.app/DigitalMediaHubRecruitmentTask";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleRadioPlayer.app/SimpleRadioPlayer";
 			};
 			name = Release;
 		};
@@ -591,17 +591,17 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QCNU46SB92;
-				INFOPLIST_FILE = DigitalMediaHubRecruitmentTaskUITests/Info.plist;
+				INFOPLIST_FILE = SimpleRadioPlayerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.paszek.DigitalMediaHubRecruitmentTaskUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paszek.SimpleRadioPlayerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DigitalMediaHubRecruitmentTask;
+				TEST_TARGET_NAME = SimpleRadioPlayer;
 			};
 			name = Debug;
 		};
@@ -611,24 +611,24 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QCNU46SB92;
-				INFOPLIST_FILE = DigitalMediaHubRecruitmentTaskUITests/Info.plist;
+				INFOPLIST_FILE = SimpleRadioPlayerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.paszek.DigitalMediaHubRecruitmentTaskUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paszek.SimpleRadioPlayerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DigitalMediaHubRecruitmentTask;
+				TEST_TARGET_NAME = SimpleRadioPlayer;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		979BC95A256292450034A27F /* Build configuration list for PBXProject "DigitalMediaHubRecruitmentTask" */ = {
+		979BC95A256292450034A27F /* Build configuration list for PBXProject "SimpleRadioPlayer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				979BC987256292460034A27F /* Debug */,
@@ -637,7 +637,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		979BC989256292460034A27F /* Build configuration list for PBXNativeTarget "DigitalMediaHubRecruitmentTask" */ = {
+		979BC989256292460034A27F /* Build configuration list for PBXNativeTarget "SimpleRadioPlayer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				979BC98A256292460034A27F /* Debug */,
@@ -646,7 +646,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		979BC98C256292460034A27F /* Build configuration list for PBXNativeTarget "DigitalMediaHubRecruitmentTaskTests" */ = {
+		979BC98C256292460034A27F /* Build configuration list for PBXNativeTarget "SimpleRadioPlayerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				979BC98D256292460034A27F /* Debug */,
@@ -655,7 +655,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		979BC98F256292460034A27F /* Build configuration list for PBXNativeTarget "DigitalMediaHubRecruitmentTaskUITests" */ = {
+		979BC98F256292460034A27F /* Build configuration list for PBXNativeTarget "SimpleRadioPlayerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				979BC990256292460034A27F /* Debug */,
