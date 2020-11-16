@@ -29,6 +29,8 @@ class ViewController: UIViewController, AVPlayerItemMetadataOutputPushDelegate {
 
     // MARK: - Outlets
     @IBOutlet weak var playPauseButton: UIButton!
+    @IBOutlet weak var songNameLabel: UILabel!
+    @IBOutlet weak var artistNameLabel: UILabel!
 
     // MARK: - Lifecycle
     override func viewDidAppear(_ animated: Bool) {
@@ -48,19 +50,21 @@ class ViewController: UIViewController, AVPlayerItemMetadataOutputPushDelegate {
     }
 
     private func setupObservers() {
-        songNameObservation = observe(\.dataModel.songName, options: [.new], changeHandler: { (object, change) in
+        songNameObservation = observe(\.dataModel.songName, options: [.new], changeHandler: { [weak self] (object, change) in
             guard let newValue = change.newValue else { return }
             guard let name = newValue else { return }
-            print(name)
+
+            self?.songNameLabel.text = name
         })
 
-        artistObservation = observe(\.dataModel.artist, options: [.new], changeHandler: { (object, change) in
+        artistObservation = observe(\.dataModel.artist, options: [.new], changeHandler: { [weak self] (object, change) in
             guard let newValue = change.newValue else { return }
             guard let artist = newValue else { return }
-            print(artist)
+
+            self?.artistNameLabel.text = artist
         })
 
-        albumCoverObservation = observe(\.dataModel.albumCoverURL, options: [.new], changeHandler: { (object, change) in
+        albumCoverObservation = observe(\.dataModel.albumCoverURL, options: [.new], changeHandler: { [weak self] (object, change) in
             guard let newValue = change.newValue else { return }
             guard let albumCoverURL = newValue else { return }
             print(albumCoverURL)
